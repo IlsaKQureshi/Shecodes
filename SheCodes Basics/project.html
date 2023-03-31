@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination Generator</title>
+    <style>
+      body {
+        background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+      }
+
+      .page_content {
+        display: block;
+        text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      h1 {
+        padding: 1%;
+        font-size: 30px;
+      }
+      h2 {
+        padding: 0%;
+        font-size: 25px;
+        font-weight: 500;
+      }
+
+      img {
+        margin: 10px auto;
+        width: 50%;
+        max-width: 85%;
+      }
+      p {
+        line-height: 25px;
+        padding: 2%;
+      }
+
+      button {
+        margin: 5px auto;
+        border: 2px solid #ffc3a0;
+        background: #95937d;
+        color: #fff;
+        font-size: 16px;
+        padding: 18px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease-in-out;
+        box-shadow: rgba(115, 119, 216, 0.18) 0px 9px 10px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #f2d3c1;
+        color: #95937d;
+        border: 2px solid #95937d;
+      }
+
+      .credits {
+        text-align: center;
+        font-size: 12px;
+      }
+
+      .credits span {
+        color: blue;
+      }
+
+      a {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page_content">
+      <h1>Destination Generator ✈️</h1>
+      <hr />
+      <h2>A destination generator for ambiguous travelers ✌🏽</h2>
+      <img
+        id="image"
+        src="https://freepngimg.com/thumb/travel/30765-3-travel-photos.png"
+      />
+      <br />
+      <p>
+        Sometimes choosing a destination to travel can be very hard, to save
+        your time and energy, This destination generator will generate a place
+        for you. So, what are you waiting for? Click the button below and lets
+        get start with the adventure🧳
+      </p>
+
+      <button><strong>Generate destination</strong></button>
+    </div>
+
+    <p class="credits">
+      <em>Created by <span>Ilsa Qureshi</span></em>
+    </p>
+    <script>
+      function generate_destination() {
+        let name = prompt("What is your name?");
+        let situation = prompt(
+          "Are you traveling solo or with family?"
+        ).toLowerCase();
+        let continent = prompt(
+          "What destination Would you like to travel? Africa, Europe or Asia?"
+        ).toLowerCase();
+        let h2 = document.querySelector("h2");
+        let p = document.querySelector("p");
+
+        if (continent === "africa" && situation === "solo") {
+          alert(
+            "Hi " +
+              name +
+              "👋🏽, We selected Seychelles for you, and heres why 👇🏽"
+          );
+          h2.innerHTML = "Seychelles";
+          document.getElementById("image").src =
+            "https://www.thetimes.co.uk/travel/wp-content/uploads/sites/6/2021/05/USE_Seychelles_GettyImages-981523266.jpg";
+          p.innerHTML =
+            "The Seychelles is an archipelago of 115 islands in the Indian Ocean, off East Africa. It's home to numerous beaches, coral reefs and nature reserves, as well as rare animals such as giant Aldabra tortoises. Mahé, a hub for visiting the other islands, is home to capital Victoria. It also has the mountain rainforests of Morne Seychellois National Park and beaches, including Beau Vallon and Anse Takamaka.<br /><em> To discover more about Seychelles</em>  <a target='blank' href= 'https://en.wikipedia.org/wiki/Seychelles'> Click Here</a>";
+        } else if (continent === "africa" && situation === "family") {
+          alert(
+            "Hi " +
+              name +
+              "👋🏽, We selected Madagascar for you, and heres why 👇🏽"
+          );
+          h2.innerHTML = "Madagascar";
+          document.getElementById("image").src =
+            "https://www.nationsonline.org/gallery/Madagascar/Allee-des-Baobabs-Madagascar.jpg";
+          p.innerHTML =
+            "One of the most spectacular, vibrant family holiday destinations is Madagascar! It boasts luscious wildlife, great food and welcoming locals. Those seeking adventure will find breathtaking hiking trails, while those looking to relax will find peaceful beaches. It's a fantastic holiday destination all year round.<br /><em> To discover more about Madagascar</em>  <a  target='blank' href= 'https://en.wikipedia.org/wiki/Madagascar'> Click Here</a>";
+        } else if (continent === "europe" && situation === "solo") {
+          alert(
+            "Hi " + name + "👋🏽, We selected Iceland for you, and heres why 👇🏽"
+          );
+          h2.innerHTML = "Iceland ";
+          document.getElementById("image").src =
+            "https://www.wildfrontierstravel.com/media/cache/page_image_large/upload/cc/901c436b/Iceland.jpeg";
+          p.innerHTML =
+            "Iceland is a prime example of a destination that lends itself to solo travel. If you're looking for a gorgeous location that gives you solitude and time to think, there's a mystical essence to Iceland that provides the perfect backdrop.Ranked as the safest country in the world for several years, you can rest easy as you gaze at geysers and hot springs. You can plan for a fun road trip but even if you aren't interested in driving, the public transport systems are impressive too.<br /> <em>To discover more about Iceland </em> <a  target='blank' href= 'https://en.wikipedia.org/wiki/Iceland'> Click Here</a>";
+        } else if (continent === "europe" && situation === "family") {
+          alert(
+            "Hi " + name + "👋🏽, We selected Italy for you, and heres why 👇🏽"
+          );
+          h2.innerHTML = "Italy";
+          document.getElementById("image").src =
+            "https://www.tripsavvy.com/thmb/bdMz4AOVMc2rkmLzTWvTJf44Q9c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/grand-canal-in-venice--italy-584393947-5a89a0d78023b900374a486b-b2be891e5535465a819696aa318d714a.jpg";
+          p.innerHTML =
+            "One of the best solo adventures you can take is to the land of pasta, wine, and good times. We're talking about Italy of course. This is a country that should be at the top of everyone's bucket list. Italy is a great destination for a solo walking holiday.  There’s no better way to explore the real Italy than to walk through the Apennines or the Southern Alps, meet the locals, eat authentic Italian food, and of course, sample as much wine as you can.<br /><em> To discover more about Italy</em>  <a  target='blank' href= 'https://en.wikipedia.org/wiki/Italy'> Click Here</a>";
+        } else if (continent === "asia" && situation === "solo") {
+          alert(
+            "Hi " + name + "👋🏽, We selected Jordan for you, and heres why 👇🏽"
+          );
+          h2.innerHTML = "Jordan";
+          document.getElementById("image").src =
+            "https://images.thrillophilia.com/image/upload/s--BJdnMk_7--/c_fill,g_center,h_642,q_auto,w_1280/f_auto,fl_strip_profile/v1/images/photos/000/124/779/original/1581854277_shutterstock_169816541.jpg.jpg";
+          p.innerHTML =
+            "One of the most beautiful countries to visit is Jordan, with its otherworldly deserts, friendly people and breathtaking wonders. Some may think of it as an unusual solo travel destination, but that is what makes it such a rewarding experience. With that said, you'll likely need more preparation and assertiveness than you would with other countries, but it's all part of the fun. There are a lot of exciting and challenging outdoor activities to try in Jordan, as well as delicious food that you’ve likely never tried before.<br /><em> To discover more about Jordan </em> <a target='blank'  href= 'https://en.wikipedia.org/wiki/Jordan'> Click Here</a>";
+        } else if (continent === "asia" && situation === "family") {
+          alert(
+            "Hi " + name + "👋🏽, We selected Iran for you, and heres why 👇🏽"
+          );
+          h2.innerHTML = "Iran";
+          document.getElementById("image").src =
+            "https://www.theglobetrottingdetective.com/wp-content/uploads/2021/03/Golestan-Palace-Tehran-Iran.jpg";
+          p.innerHTML =
+            " It's easy to see why tourism is growing in Iran - it's such a rewarding place to visit. It's a safe country, with some of the most welcoming and hospitable people you will ever meet. Iran has plenty to see in the way of nature, culture and history. It also has 21 UNESCO World Heritage Sites, so it's perfect for history buffs. Our small group tours are the best way to discover Iran, explore its cities and meet the locals. <br /><em> To discover more about Iran</em>  <a target='blank' href= 'https://en.wikipedia.org/wiki/Iran'> Click Here</a>";
+        } else {
+          alert("Oops, I think you made a typo 😅");
+        }
+      }
+
+      let GenBtn = document.querySelector("button");
+      GenBtn.addEventListener("click", generate_destination);
+    </script>
+  </body>
+</html>
