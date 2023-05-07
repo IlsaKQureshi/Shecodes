@@ -5,62 +5,190 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel 🌍</title>
+    <style>
+      body {
+        background: linear-gradient(
+          to right,
+          rgb(182, 244, 146),
+          rgb(51, 139, 147)
+        );
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .container {
+        margin: 20px auto;
+        max-width: 600px;
+        background: #7cbac1;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .container button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #40859a;
+        font-size: 18px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #40859a;
+        transition: all 250ms ease-in-out;
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 5px;
+        transition: all 250ms ease-in-out, filter 2000ms ease-in;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px;
+        font-size: 18px;
+      }
+
+      button.dark-theme {
+        display: block;
+        margin: 0 auto;
+        font-size: 14px;
+        background: black;
+        color: azure;
+        padding: 5px 7px;
+        border-radius: 6px;
+      }
+
+      button.dark-theme:hover {
+        color: black;
+        background: azure;
+      }
+
+      img:hover {
+        filter: contrast(70%);
+        transform: scale(1.2);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 10px 0;
+        grid-gap: 5px;
+      }
+
+      .grid img {
+        border-radius: 5px;
+        aspect-ratio: 1/0.6;
+        transition: all 250ms ease-out;
+      }
+
+      .grid img:hover {
+        transform: scale(2.5);
+      }
+
+      .dark-theme {
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        color: white;
+      }
+
+      .dark-theme .container {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .dark-theme a {
+        color: #40859a;
+      }
+    </style>
   </head>
   <body>
-    <button>Dark Theme</button>
+    <button class="dark-theme">Dark Theme</button>
     <h1>Travel</h1>
-    <h2>My favorite hobby when I have some money left in my bank</h2>
-
-    <img
-      src="https://globalgrasshopper.com/wp-content/uploads/2012/05/Stunning-places-to-visit-in-Turkey-1000x668.jpg"
-      alt="Turkey"
-    />
-    <img
-      src="https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/11/OG-for-best-places-to-visit-in-July-in-the-world.jpg"
-      alt="Greece"
-    />
-    <img
-      src="https://d36tnp772eyphs.cloudfront.net/blogs/1/2016/03/petra-jordan9.jpg"
-      alt="Jordan"
-    />
-    <img
-      src="https://img.theculturetrip.com/wp-content/uploads/2018/01/fairy-meadows.jpg"
-      alt="Pakistan"
-    />
-    <img
-      src="https://deih43ym53wif.cloudfront.net/rozenhoedkaai-canal-belfry-bruges-belgium-shutterstock_1214277007_ddf11df5e3.jpeg"
-      alt="Belgium"
-    />
-
-    <p>
-      The origin of the word "travel" is most likely lost to history. The term
-      "travel" may originate from the Old French word travail, which means
-      'work'. According to the Merriam-Webster dictionary, the first known use
-      of the word travel was in the 14th century. It also states that the word
-      comes from Middle English travailen, travelen (which means to torment,
-      labor, strive, journey) and earlier from Old French travailler (which
-      means to work strenuously, toil). In English, people still occasionally
-      use the words travail, which means struggle. According to Simon Winchester
-      in his book The Best Travelers' Tales (2004), the words travel and travail
-      both share an even more ancient root: a Roman instrument of torture called
-      the tripalium (in Latin it means "three stakes", as in to impale). This
-      link may reflect the extreme difficulty of travel in ancient times. Travel
-      in modern times may or may not be much easier, depending upon the
-      destination. Travel to Mount Everest, the Amazon rainforest, extreme
-      tourism, and adventure travel are more difficult forms of travel. Travel
-      can also be more difficult depending on the method of travel, such as by
-      bus, cruise ship, or even by bullock cart. Reasons for traveling include
-      recreation,holidays, rejuvenation, tourism or vacationing,research travel,
-      the gathering of information, visiting people, volunteer travel for
-      charity, migration to begin life somewhere else, religious pilgrimages and
-      mission trips, business travel, trade, commuting, obtaining health care,
-      waging or fleeing war, for the enjoyment of traveling, or other reasons.
-      Travelers may use human-powered transport such as walking or bicycling; or
-      vehicles, such as public transport, automobiles, trains, ferries, boats,
-      cruise ships and airplanes.
-    </p>
-
-    <button>Benefits of Traveling</button>
+    <div class="container">
+      <h2>My favorite hobby when I have some money left in my bank</h2>
+      <a
+        href="https://www.memphistours.com/blog/why-is-travel-important-here-are-10-important-benefits-of-traveling"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://globalgrasshopper.com/wp-content/uploads/2012/05/Stunning-places-to-visit-in-Turkey-1000x668.jpg"
+          alt="Turkey"
+          class="turkey-img"
+      /></a>
+      <div class="grid">
+        <img
+          src="https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/11/OG-for-best-places-to-visit-in-July-in-the-world.jpg"
+          alt="Greece"
+        />
+        <img
+          src="https://d36tnp772eyphs.cloudfront.net/blogs/1/2016/03/petra-jordan9.jpg"
+          alt="Jordan"
+        />
+        <img
+          src="https://img.theculturetrip.com/wp-content/uploads/2018/01/fairy-meadows.jpg"
+          alt="Pakistan"
+        />
+        <img
+          src="https://deih43ym53wif.cloudfront.net/rozenhoedkaai-canal-belfry-bruges-belgium-shutterstock_1214277007_ddf11df5e3.jpeg"
+          alt="Belgium"
+        />
+      </div>
+      <p>
+        The origin of the word "travel" is most likely lost to history. The term
+        "travel" may originate from the Old French word travail, which means
+        'work'. According to the Merriam-Webster dictionary, the first known use
+        of the word travel was in the 14th century. It also states that the word
+        comes from Middle English travailen, travelen (which means to torment,
+        labor, strive, journey) and earlier from Old French travailler (which
+        means to work strenuously, toil). In English, people still occasionally
+        use the words travail, which means struggle. According to Simon
+        Winchester in his book The Best Travelers' Tales (2004), the words
+        travel and travail both share an even more ancient root: a Roman
+        instrument of torture called the tripalium (in Latin it means "three
+        stakes", as in to impale). This link may reflect the extreme difficulty
+        of travel in ancient times. Travel in modern times may or may not be
+        much easier, depending upon the destination. Travel to Mount Everest,
+        the Amazon rainforest, extreme tourism, and adventure travel are more
+        difficult forms of travel. Travel can also be more difficult depending
+        on the method of travel, such as by bus, cruise ship, or even by bullock
+        cart. Reasons for traveling include recreation,holidays, rejuvenation,
+        tourism or vacationing,research travel, the gathering of information,
+        visiting people, volunteer travel for charity, migration to begin life
+        somewhere else, religious pilgrimages and mission trips, business
+        travel, trade, commuting, obtaining health care, waging or fleeing war,
+        for the enjoyment of traveling, or other reasons. Travelers may use
+        human-powered transport such as walking or bicycling; or vehicles, such
+        as public transport, automobiles, trains, ferries, boats, cruise ships
+        and airplanes.
+      </p>
+      <button>Benefits of Traveling</button>
+    </div>
     <footer>Coded by Ilsa Qureshi</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark-theme");
+      }
+      let themebtn = document.querySelector(".dark-theme");
+      themebtn.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
