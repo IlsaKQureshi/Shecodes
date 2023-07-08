@@ -7,6 +7,40 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h1>Temp here</h1>
+    <script>
+
+
+navigator.geolocation.getCurrentPosition(GetPos);
+
+function GetPos(position){
+    let long = position.coords.longitude;
+    let lat = position.coords.latitude;
+    console.log(long,lat);
+    
+    AxiosReq(lat,long);
+}
+
+function AxiosReq(lat,long){
+    let apikey ="b95f179627c8dd37f41e1be6e3250e19";
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apikey}&units=metric`;
+
+    return axios.get(url).then(GetTemp);
+
+}
+
+function GetTemp(response){
+    temp = response.data.main.temp;
+    console.log(temp);
+
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = `The temperature in Karachi,Pakistan is ${Math.round(temp)}°C`
+}
+
+
+
+</script></body>
     <link rel="stylesheet" href="src/script.js">
 </body>
 </html>
