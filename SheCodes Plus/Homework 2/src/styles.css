@@ -1,0 +1,88 @@
+/*body {
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}*/
+
+body,
+.card {
+  background: radial-gradient(
+    345px at 3.1% 89.3%,
+    rgba(254, 223, 45, 0.46) 0%,
+    rgba(254, 139, 45, 0.46) 31.9%,
+    rgba(255, 24, 220, 0.46) 62%,
+    rgba(24, 145, 255, 0.46) 85.8%
+  );
+  font-family: "Monoton", cursive;
+  font-family: "Raleway", sans-serif;
+}
+
+.cities {
+  padding: 3px;
+  font-size: 16px;
+  color: blue;
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
+  padding: 5px;
+}
+
+#current {
+  position: relative;
+  left: 20px;
+  padding: 0px 20px;
+  border-radius: 0px;
+  font-size: 15px;
+}
+#search {
+  padding: 0px 20px;
+}
+.form-control {
+  max-width: 500px;
+}
+.input-group {
+  padding: 15px 0px 0px 0px;
+}
+
+.main-city h1 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.main-city span {
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.main-city .temp {
+  font-size: 70px;
+  padding-left: 60px;
+  position: relative;
+  top: 40px;
+}
+svg {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.right-data div {
+  position: relative;
+  bottom: 100px;
+  left: 55%;
+  font-size: 15px;
+  padding: 0px 10px;
+}
+
+.flex-column {
+  font-size: 18px;
+  padding-bottom: 0px;
+}
+
+.flex-column svg {
+  position: relative;
+  right: 25px;
+  bottom: 20px;
+}

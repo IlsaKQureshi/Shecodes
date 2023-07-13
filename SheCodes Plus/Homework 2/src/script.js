@@ -47,6 +47,13 @@ function new_date(){
 
   min = now.getMinutes();
 
+  min = min + "";
+
+  if (min.length == 1)
+    {
+    min = "0" + min;
+    }
+
   full_new_date = `${day} ${num_date} ${month} ${year} ${hour}:${min} ` 
 
   return full_new_date
@@ -54,16 +61,74 @@ function new_date(){
 
 document.getElementById("full-date").innerHTML = new_date();
 
-function sub_val(event){
-  event.preventDefault()
-  let input = document.querySelector("#city-input");
-  document.getElementById("the-city").innerHTML = input.value
-}
+
+
+// change city name & temp acc to search engine
 
 let form = document.querySelector("form");
-form.addEventListener("submit", sub_val);
+form.addEventListener("submit", GetCityName);
 
-// didnt have time to implement the bonus feature but you will definitely see it in my final project!
+function GetCityName(event){
+  event.preventDefault()
+  let input = document.querySelector("#city-input");
+  let cityname = input.value
+  document.getElementById("the-city").innerHTML = input.value
+
+  AxiosRequest(cityname)
+}
+
+function AxiosRequest(cityname){
+
+
+  let apikey = "88d15ed9f618b4c3fad2d4f40f91aa94";
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${apikey}&units=metric`;
+
+  return axios.get(url).then(GetCityTemp);
+
+}
+
+function GetCityTemp(response){
+
+  temp = response.data.main.temp;
+  console.log(temp);
+
+  let templabel = document.querySelector(".temp");
+  templabel.innerHTML = `${Math.round(temp)}°C`;
+
+}
+
+
+//Bonus: Current button
+
+let CurrentLoc =document.querySelector("#current")
+CurrentLoc.addEventListener("click", GeoReq);
+
+function GeoReq(event){
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(GetCoord);
+}
+
+function GetCoord(position){
+
+  let long = position.coords.longitude;
+  let lat = position.coords.latitude;
+  let apikey ="88d15ed9f618b4c3fad2d4f40f91aa94"
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apikey}&units=metric`;
+
+  return axios.get(url).then(GetWeather);
+}
+
+function GetWeather(response){
+
+  let temp = response.data.main.temp;
+
+  let templabel = document.querySelector(".temp");
+  templabel.innerHTML = `${Math.round(temp)}°C`;
+
+  let name = response.data.name;
+
+  document.getElementById("the-city").innerHTML = name;
+}
 
 
 
