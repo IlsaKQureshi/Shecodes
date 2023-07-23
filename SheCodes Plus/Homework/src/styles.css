@@ -86,3 +86,9 @@ svg {
   right: 25px;
   bottom: 20px;
 }
+
+.git p,a {
+  display: inline-block;
+  margin-top: 20px;
+  padding-left: 150px;
+}
