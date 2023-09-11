@@ -1,6 +1,6 @@
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 10px auto;
+  margin: 15px auto;
 }
 
 .weather-app-bord {
@@ -31,12 +31,16 @@ li {
   line-height: 20px;
 }
 
+li::first-letter {
+  text-transform: capitalize;
+}
+
 .overview {
   margin-bottom: 20px;
 }
 
 .weather-temp img {
-  margin-right: 10px;
+  margin-right: 5px;
   height: 64px;
   width: 64px;
 }
