@@ -51,9 +51,19 @@ function show_temp(response) {
   );
 }
 
-let apiKey = `88d15ed9f618b4c3fad2d4f40f91aa94`;
-let city = "Karachi";
-let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = `88d15ed9f618b4c3fad2d4f40f91aa94`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-console.log(url);
-axios.get(url).then(show_temp);
+  axios.get(url).then(show_temp);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let city_input_element = document.querySelector("#city-input");
+  search(city_input_element.value);
+  console.log(city_input_element.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
