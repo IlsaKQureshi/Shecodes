@@ -66,3 +66,7 @@ li::first-letter {
 .weather-temp .active:hover {
   text-decoration: none;
 }
+
+.weather-app-wrapper small a {
+  text-decoration: none;
+}
