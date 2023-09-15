@@ -35,7 +35,9 @@ function show_temp(response) {
   let date_element = document.querySelector("#date");
   let weather_icon_element = document.querySelector("#weather_icon");
 
-  temp_element.innerHTML = Math.round(response.data.main.temp);
+  celsius_temp = Math.round(response.data.main.temp);
+
+  temp_element.innerHTML = celsius_temp;
   city_element.innerHTML = response.data.name;
   weather_condition_element.innerHTML = response.data.weather[0].description;
   humidity_element.innerHTML = response.data.main.humidity;
@@ -65,5 +67,29 @@ function handleSubmit(event) {
   console.log(city_input_element.value);
 }
 
+function showF(event) {
+  event.preventDefault();
+  celsius_link.classList.remove("active");
+  fahrenheit_link.classList.add("active");
+  let fahren_temp = Math.round((celsius_temp * 9) / 5 + 32);
+  let temp_element2 = document.querySelector("#temperature");
+  temp_element2.innerHTML = fahren_temp;
+}
+
+function showC(event) {
+  event.preventDefault();
+  fahrenheit_link.classList.remove("active");
+  celsius_link.classList.add("active");
+  let temp_element2 = document.querySelector("#temperature");
+  temp_element2.innerHTML = celsius_temp;
+}
+let celsius_temp = null;
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheit_link = document.querySelector("#fahren-link");
+fahrenheit_link.addEventListener("click", showF);
+
+let celsius_link = document.querySelector("#celsius-link");
+celsius_link.addEventListener("click", showC);

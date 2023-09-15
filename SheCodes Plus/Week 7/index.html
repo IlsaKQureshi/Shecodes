@@ -48,10 +48,14 @@
                   src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                   alt="Clear"
                   id="weather_icon"
+                  class="float-left"
                 />
-                <div>
+                <div class="float-left">
                   <strong id="temperature"></strong
-                  ><span class="units">°C | <a href="#">°F</a></span>
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahren-link">°F</a></span
+                  >
                 </div>
               </div>
             </div>
