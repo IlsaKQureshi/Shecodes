@@ -24,6 +24,35 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${min} `;
 }
 
+function display_forecast() {
+  let forecast_element = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+              <div class="col-2">
+                <div class="weather-forecast-date">${day}</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt=""
+                  width="36"
+                />
+                <div class="weather-forecast-temp">
+                  <span class="weather-temp-max">18°</span
+                  ><span class="weather-temp-min"> 12°</span>
+                </div>
+              </div>
+            `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecast_element.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 function show_temp(response) {
   console.log(response.data);
 
@@ -35,6 +64,7 @@ function show_temp(response) {
   let date_element = document.querySelector("#date");
   let weather_icon_element = document.querySelector("#weather_icon");
 
+  display_forecast();
   celsius_temp = Math.round(response.data.main.temp);
 
   temp_element.innerHTML = celsius_temp;
