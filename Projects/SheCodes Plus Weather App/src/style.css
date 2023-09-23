@@ -1,27 +1,38 @@
 .weather-app {
-  max-width: 400px;
+  max-width: 450px;
   margin: 25px auto;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  color: white;
+  font-weight: 200;
 }
 
 .weather-app-border {
   border: 1px solid burlywood;
   border-radius: 20px;
-  padding: 30px;
-  background: radial-gradient(
-    circle at 12.3% 19.3%,
-    rgb(85, 88, 218) 0%,
-    rgb(95, 209, 249) 100.2%
+  padding: 35px;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 9, 137) 30%,
+    rgba(0, 129, 235, 0.72) 100.2%
   );
 }
 
 .City-Weather-Overview {
   text-align: center;
 }
+
+.weather-info {
+  padding: 20px;
+}
+
+form {
+  padding: 10px;
+}
 h1 {
+  padding-top: 20px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  font-size: 30px;
 }
 
 ul {
@@ -32,15 +43,28 @@ ul {
   list-style: none;
 }
 
-ul .overview-temp {
+ul #overview-temp {
   font-size: 50px;
 }
 
 li {
-  margin: 10px;
+  margin: 5px;
   line-height: 2.5;
+}
+
+li::first-letter {
+  text-transform: capitalize;
 }
 
 small {
   margin: 10px;
+  color: black;
+}
+
+.forecast-data {
+  margin: 5px auto;
+  padding: 5px;
+  border: 0.1mm solid black;
+  border-radius: 10px;
+  text-align: center;
 }

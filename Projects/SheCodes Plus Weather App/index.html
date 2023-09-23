@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <title>Weather App</title>
   </head>
@@ -28,7 +29,7 @@
               <div class="col-9">
                 <input
                   type="search"
-                  placeholder="Enter City "
+                  placeholder="Enter City"
                   class="form-control"
                   id="city-input"
                 />
@@ -37,30 +38,32 @@
                 <input
                   type="submit"
                   value="search"
-                  class="btn btn-outline-dark"
+                  class="btn btn-outline-light"
                 />
               </div>
             </div>
           </form>
           <div class="City-Weather-Overview">
-            <h1 class="city">Karachi</h1>
+            <h1 id="city"></h1>
             <ul>
-              <li class="overview-temp">20°C</li>
-              <li class="overview-icon">
+              <li id="overview-date"></li>
+              <li><span id="overview-temp"></span>°C</li>
+              <li>
                 <img
+                  id="overview-icon"
                   src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png"
                   alt=""
-                  width="70"
+                  width="100"
                 />
               </li>
-              <li class="weather-cond">Partial Clouds</li>
-              <li class="overview-date">23 September 2023, 12:03</li>
+              <li id="weather-cond">Partial Clouds</li>
             </ul>
             <div class="row weather-info">
-              <div class="col-6 Humidity">Humidity: %</div>
-              <div class="col-6 Wind">Wind: Km/h</div>
+              <div class="col-6">Humidity: <span id="humidity"></span>%</div>
+              <div class="col-6">Wind: <span id="wind"></span> Km/h</div>
             </div>
           </div>
+          <div class="Forecast-overview" id="forecast"></div>
         </div>
         <small><a href="">Open-Source Code</a> by Ilsa Khurshid Qureshi</small>
       </div>
