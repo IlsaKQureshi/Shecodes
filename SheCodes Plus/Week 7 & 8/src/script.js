@@ -141,8 +141,5 @@ let celsius_temp = null;
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let fahrenheit_link = document.querySelector("#fahren-link");
-fahrenheit_link.addEventListener("click", showF);
-
 let celsius_link = document.querySelector("#celsius-link");
 celsius_link.addEventListener("click", showC);
