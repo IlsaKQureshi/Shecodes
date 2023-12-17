@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -40,6 +40,59 @@
       <label for="Train">Train</label>
       <input type="checkbox" name="Ship" id="Ship" />
       <label for="Ship">Ship</label>
+    </div>
+  </body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <label for="fruits">What is your favorite fruit?</label>
+      <select id="fruits">
+        <option value="">Select fruit</option>
+        <option value="kiwi">Kiwi</option>
+        <option value="orange">Orange</option>
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="strawberry">Strawberry</option>
+      </select>
+
+      <script>
+        let fruitselect = document.querySelector("#fruits");
+      </script>
+    </div>
+    <div>
+      <label for="Colour">What is your favourite colour?</label>
+      <select id="Colour">
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="white">White</option>
+        <option value="" selected>Select Colour</option>
+      </select>
+
+      <script>
+        function alertcolourheart(event) {
+          if (event.target.value.length > 0) {
+            if (event.target.value === "blue") {
+              alert("💙");
+            }
+            if (event.target.value === "red") {
+              alert("❤️");
+            } else {
+              alert("🤍");
+            }
+          }
+        }
+
+        let colourselect = document.querySelector("#Colour");
+        colourselect.addEventListener("change", alertcolourheart);
+      </script>
     </div>
   </body>
 </html>
