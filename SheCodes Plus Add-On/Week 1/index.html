@@ -44,8 +44,7 @@
   </body>
 </html>-->
 
-<!DOCTYPE html>
-<html lang="en">
+<!--<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -94,5 +93,39 @@
         colourselect.addEventListener("change", alertcolourheart);
       </script>
     </div>
+  </body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="newdate">Date here</div>
+
+    <script>
+      function changedate() {
+        let showdate = document.querySelector("#newdate");
+        showdate.innerHTML = new Date();
+      }
+
+      setTimeout(changedate, 5000);
+    </script>
+
+    <div id="millidate">Millisecond update</div>
+
+    <script>
+      function changemilli_date() {
+        let showdate = document.querySelector("#millidate");
+        const date = new Date();
+        let milli = date.getMilliseconds();
+        showdate.innerHTML = date + " " + milli;
+      }
+
+      setInterval(changemilli_date, 1);
+    </script>
   </body>
 </html>
