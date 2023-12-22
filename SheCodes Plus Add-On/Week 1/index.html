@@ -96,7 +96,7 @@
   </body>
 </html>-->
 
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -127,5 +127,30 @@
 
       setInterval(changemilli_date, 1);
     </script>
+  </body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="currentdate"></div>
+    <div id="future"></div>
+    <script>
+      let current = moment().format("dddd Do MMMM");
+      let currentElement = document.querySelector("#currentdate");
+      currentElement.innerHTML = current;
+
+      let futureElement = document.querySelector("#future");
+      let future = moment().add(10, "year").format("dddd Do MMMM");
+      futureElement.innerHTML = `After 10 years it will be ${future}`;
+    </script>
+
+    <script></script>
   </body>
 </html>
