@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="city">Select a City</label>
+    <select id="city">
+      <option value="">Select a City</option>
+      <option value="tokyo" id="tokyo">Tokyo</option>
+      <option value="sydney" id="sydney">Sydney</option>
+      <option value="karachi" id="karachi">Karachi</option>
+    </select>
+    <script>
+      function showtz(event) {
+        let tokyo = moment().tz("Asia/Tokyo").format("LLLL");
+        let karachi = moment().tz("Asia/Karachi").format("LLLL");
+        let sydney = moment().tz("Australia/Sydney").format("LLLL");
+
+        if (event.target.value.length > 0) {
+          if (event.target.value === "tokyo") {
+            alert(`It is ${tokyo} in Asia/Tokyo`);
+          }
+          if (event.target.value === "sydney") {
+            alert(`It is ${sydney} in Australia/Sydney`);
+          }
+          if (event.target.value === "karachi") {
+            alert(`It is ${karachi} in Asia/Karachi`);
+          }
+        }
+      }
+      let cityselect = document.querySelector("#city");
+      cityselect.addEventListener("change", showtz);
+    </script>
+  </body>
+</html>

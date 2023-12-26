@@ -130,7 +130,7 @@
   </body>
 </html>-->
 
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -152,5 +152,25 @@
     </script>
 
     <script></script>
+  </body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="tokyo"></div>
+    <div id="now"></div>
+    <script>
+      let tokyo = moment().tz("Asia/Tokyo").format("dddd MMMM");
+      let tokyoelement = document.querySelector("#tokyo");
+      tokyoelement.innerHTML = tokyo;
+    </script>
   </body>
 </html>
