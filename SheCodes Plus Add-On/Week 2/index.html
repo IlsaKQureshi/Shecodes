@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock ⌚</title>
   </head>
   <body>
@@ -13,37 +14,26 @@
       <label for="city">City</label>
       <select id="city">
         <option value="">Select a city...</option>
-        <option value="sydney">Sydney</option>
-        <option value="newyork">New York</option>
-        <option value="karachi">Karachi</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="America/New_York">New York</option>
+        <option value="Asia/Karachi">Karachi</option>
       </select>
 
-      <div class="city">
-        <div>
-          <h2>Los Angles</h2>
-          <div>December 15th 2023</div>
+      <div id="cities">
+        <div class="city" id="losangeles">
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">1:48:15 <small>AM</small></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>Los Angles</h2>
-          <div>December 15th 2023</div>
-        </div>
-        <div class="time">1:48:15 <small>AM</small></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>Los Angles</h2>
-          <div>December 15th 2023</div>
-        </div>
-        <div class="time">1:48:15 <small>AM</small></div>
       </div>
     </div>
 
     <footer>
       This Project is coded by Ilsa Khurshid Qureshi and is
       <a
+        rel="noopener"
         href="https://github.com/IlsaKQureshi/Shecodes/tree/master/SheCodes%20Plus%20Add-On/Week%202"
         target="_blank"
       >
