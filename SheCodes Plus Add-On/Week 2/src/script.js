@@ -17,6 +17,10 @@ setInterval(ChangeTime, 1000);
 
 function UpdateCity(event) {
   let cityTZ = event.target.value;
+
+  if (cityTZ === "current") {
+    cityTZ = moment.tz.guess();
+  }
   let cityTime = moment().tz(cityTZ);
   let cityName = cityTZ.replace("_", " ").split("/")[1];
 
