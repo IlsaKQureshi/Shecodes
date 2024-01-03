@@ -1,9 +1,13 @@
 body {
   font-family: "Montserrat", sans-serif;
+  color: white;
 }
 .main-container {
   background: linear-gradient(-200deg, #ff057c 0.1%, #161861 25%);
   border-radius: 30px;
+  padding: 20px;
+  max-width: 480px;
+  margin: 25px auto;
 }
 
 .container {
@@ -63,4 +67,11 @@ body {
   background-color: white;
   width: 4px;
   height: 70px;
+}
+
+#cities .city {
+  border-radius: 10px;
+  border: 1px solid #fff;
+  padding: 10px;
+  margin: 15px;
 }
