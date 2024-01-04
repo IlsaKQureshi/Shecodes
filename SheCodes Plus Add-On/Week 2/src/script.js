@@ -39,3 +39,13 @@ function UpdateCity(event) {
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", UpdateCity);
+
+//clock
+
+let hr = document.getElementById("hour");
+let mn = document.getElementById("min");
+let sc = document.getElementById("sc");
+
+function displayTime() {}
+
+setInterval(displayTime, 1000);
