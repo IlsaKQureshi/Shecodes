@@ -49,21 +49,22 @@ body {
 }
 .hand i {
   position: absolute;
-  background-color: white;
   width: 4px;
-  height: 70px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 2px solid #ff057e78;
 }
 
-.hand #hour {
+#hour i {
   background-color: #fff;
+  height: 70px;
 }
-.hand #min {
-  background-color: #ff057e78;
+#min i {
+  background-color: #ff057c;
+  height: 95px;
 }
-.hand #sec {
+#sec i {
   background-color: #00d507;
+  height: 110px;
 }
 /* Analog Clock End */
 
