@@ -42,7 +42,7 @@ function ChangeHomepageTime() {
 
 setInterval(ChangeHomepageTime, 1000);
 
-function localTime(event) {
+function localTime() {
   let locationCity = document.querySelector("#loc_city");
   let locationTZ = moment.tz.guess();
   let cityTime = moment().tz(locationTZ);
@@ -60,13 +60,10 @@ function localTime(event) {
       </div>`;
     Clock(cityTime);
   }
-
-  if (event) {
-    UpdateCity(event);
-  }
 }
 
-setInterval(localTime, 1000);
+let localTimeInterval = setInterval(localTime, 1000);
+
 function Clock(time) {
   let hr = document.getElementById("hour");
   let mn = document.getElementById("min");
@@ -86,10 +83,10 @@ function Clock(time) {
 }
 
 let citiesSelectElement = document.querySelector("#city");
-citiesSelectElement.addEventListener("change", localTime);
 citiesSelectElement.addEventListener("change", UpdateCity);
 
 function UpdateCity(event) {
+  clearInterval(localTimeInterval);
   let cityTZ = event.target.value;
   let updatedCityTime = moment().tz(cityTZ);
   let cityName = cityTZ.replace("_", " ").split("/")[1];
