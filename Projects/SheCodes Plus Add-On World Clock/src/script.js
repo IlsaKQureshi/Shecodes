@@ -80,14 +80,14 @@ function Clock(time) {
   hr.style.transform = `rotate(${hourRotation}deg)`;
   mn.style.transform = `rotate(${minutesRotation}deg)`;
   sc.style.transform = `rotate(${secondsRotation}deg)`;
+  setInterval(UpdateCity, 1000);
 }
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", UpdateCity);
 
-function UpdateCity(event) {
-  clearInterval(localTimeInterval);
-  let cityTZ = event.target.value;
+function UpdateCity() {
+  let cityTZ = citiesSelectElement.value;
   let updatedCityTime = moment().tz(cityTZ);
   let cityName = cityTZ.replace("_", " ").split("/")[1];
 
