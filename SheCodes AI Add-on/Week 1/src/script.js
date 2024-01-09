@@ -11,25 +11,39 @@
 
 //Second Challenge function handleClick(response) {}
 
-let disabledButton = document.querySelector("#disable-button");
-disabledButton.addEventListener("click", handleClick);
+//let disabledButton = document.querySelector("#disable-button");
+//disabledButton.addEventListener("click", handleClick);
 
-function handleClick() {
-  disabledButton.setAttribute("disabled", "disabled");
-}
+//function handleClick() {
+//  disabledButton.setAttribute("disabled", "disabled");
+//}
 
-let greenButton = document.querySelector("#green-button");
+//let greenButton = document.querySelector("#green-button");
 
-greenButton.addEventListener("click", greenBgClick);
+//greenButton.addEventListener("click", greenBgClick);
 
-function greenBgClick() {
-  greenButton.style.backgroundColor = "green";
-}
+//function greenBgClick() {
+//  greenButton.style.backgroundColor = "green";
+//}
 
-let changeButton = document.querySelector("#change-colour");
+//let changeButton = document.querySelector("#change-colour");
 
-changeButton.addEventListener("click", colourChange);
+//changeButton.addEventListener("click", colourChange);
 
-function colourChange() {
-  changeButton.classList.add("danger");
-}
+//function colourChange() {
+//  changeButton.classList.add("danger");
+//}
+
+// Third Challenge TypewriterJs
+
+let name = "Ilsa Khurshid Qureshi";
+
+let heading = document.querySelector("h1");
+heading.innerHTML = name;
+
+new Typewriter("h2", {
+  strings: [name],
+  autoStart: true,
+  delay: 100,
+  cursor: "",
+});
