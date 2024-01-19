@@ -9,6 +9,11 @@ function generatePoem(event) {
   let context =
     "Your  a poem expert and love to write poems that are 4 lines long only by following the user instructions.You must generate a poem in basic HTML and each line should be seperated by <br />. Also mention SheCodes AI in <strong> at the end of the poem on the next line ";
   let url = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
+
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="generating">⏳ Generating a French poem about ${userInstructions.value}</div>`;
+
   axios.get(url).then(displayPoem);
 }
 

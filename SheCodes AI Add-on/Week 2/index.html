@@ -14,31 +14,35 @@
         <h1>AI French Poem Generator</h1>
       </header>
       <main>
-        <form id="poem-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the French poem"
-            autofocus
-            required
-            class="instructions"
-            id="user-instr"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the French poem"
+              autofocus
+              required
+              class="instructions"
+              id="user-instr"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Flower, Paris or Sushi</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
+
+      <footer>
+        <p>
+          This project is coded with 🤍 by Ilsa Khurshid Qureshi,is hosted on
+          <a href="https://week2-poem-generator.netlify.app/">Netlify</a> and
+          open-sourced on<a
+            href="https://github.com/IlsaKQureshi/Shecodes/tree/master/SheCodes%20AI%20Add-on/Week%202"
+          >
+            Github</a
+          >
+        </p>
+      </footer>
     </div>
-    <footer>
-      <p>
-        This project is coded with 🤍 by Ilsa Khurshid Qureshi,is hosted on
-        <a href="https://week2-poem-generator.netlify.app/">Netlify</a> and
-        open-sourced on<a
-          href="https://github.com/IlsaKQureshi/Shecodes/tree/master/SheCodes%20AI%20Add-on/Week%202"
-        >
-          Github</a
-        >
-      </p>
-    </footer>
     <script src="src/script.js"></script>
   </body>
 </html>
