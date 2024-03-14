@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI Travel Destination Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>AI Travel Destination Generator</h1></header>
+      <h3>Want to travel but don’t know where to go?</h3>
+      <h4>
+        Enter your preferences, and let AI craft the perfect destination for
+        you!
+      </h4>
+      <main>
+        <div class="search-container">
+          <form id="destination-form">
+            <input
+              type="text"
+              placeholder="Enter Preferences"
+              autofocus
+              required
+              class="instructions"
+              id="user-instr"
+            />
+            <input type="submit" class="submit-button" value="Lets Go!" />
+          </form>
+          <div class="hint">i.e A place with rich culture and cold weather</div>
+        </div>
+        <div class="show-destination hidden" id="show-destination"></div>
+      </main>
+
+      <footer>
+        This project is coded by Ilsa Khurshid Qureshi,is hosted on
+        <a href="">Netlify</a> and open-sourced on<a href=""> Github</a>
+      </footer>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

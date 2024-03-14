@@ -1,0 +1,107 @@
+body {
+  background-image: url(bg.jpg);
+  background-size: cover;
+  font-family: "Truculenta", sans-serif;
+
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  margin: 100px auto;
+  max-width: 750px;
+}
+
+header {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+}
+.search-container {
+  padding: 20px;
+  width: 700px;
+  margin: 25px auto;
+  border-radius: 25px;
+  box-shadow: 5px 4px 30px 0px rgba(61, 26, 188, 0.3);
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.7;
+  font-size: 16px;
+  color: #610f0f;
+}
+
+#user-instr {
+  padding: 15px;
+  border: 1px solid rgba(71, 70, 75, 0.232);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+  background-color: #ac2d0649;
+}
+::placeholder {
+  color: white;
+}
+
+.submit-button {
+  margin-left: 10px;
+  background: #e5712f;
+  color: white;
+  border: none;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 14px 24px;
+}
+
+.show-destination {
+  font-size: 18px;
+  padding: 20px;
+  line-height: 2;
+  border-left: 4px solid #e5712f;
+  box-shadow: 5px 4px 30px 0px rgba(61, 26, 188, 0.3);
+  border-radius: 20px;
+  background-color: #79838dc7;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+}
