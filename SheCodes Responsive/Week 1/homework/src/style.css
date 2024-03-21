@@ -1,0 +1,58 @@
+:root {
+  --heading-font: 32px;
+  --primary-colour: #885df1;
+  --bg-colour: #fff4dd;
+  --border-radius: 5px;
+}
+
+body {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 38px;
+  color: var(--primary-colour);
+}
+
+.contact-link {
+  color: var(--primary-colour);
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.contact-link a {
+  border: var(--primary-colour) solid 1px;
+  padding: 10px;
+  background-color: var(--bg-colour);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  box-shadow: 5px 10px rgba(49, 45, 45, 0.125);
+  color: black;
+}
+
+.contactme,
+.aboutme {
+  text-align: justify;
+  padding: 10px;
+  margin: 20px;
+  font-size: var(--heading-font);
+}
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  flex: 1;
+  padding: 10px;
+  margin: 15px;
+  background-color: var(--bg-colour);
+  border: var(--primary-colour) solid 1px;
+}
+
+.homepage {
+  text-decoration: none;
+  color: #885df1;
+}
