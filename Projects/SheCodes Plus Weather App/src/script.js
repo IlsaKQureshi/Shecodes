@@ -1,9 +1,10 @@
-function search(city) {
-  let apiKey = `88d15ed9f618b4c3fad2d4f40f91aa94`;
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+x /
+  function search(city) {
+    let apiKey = `88d15ed9f618b4c3fad2d4f40f91aa94`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-  axios.get(url).then(temp_preview);
-}
+    axios.get(url).then(temp_preview);
+  };
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);

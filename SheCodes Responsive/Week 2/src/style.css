@@ -1,0 +1,27 @@
+.black {
+  color: black;
+}
+
+.no-line {
+  text-decoration: none;
+}
+
+.colspec {
+  background-color: yellow;
+}
+
+.borderspec {
+  width: max-content;
+  box-shadow: 11px 9px 15px;
+}
+
+.shadow-xl {
+  box-shadow: 11px 9px 15px black;
+  background-image: linear-gradient(
+    to right,
+    darkgreen 10%,
+    rgb(15, 140, 15) 50%
+  );
+  color: yellow;
+  text-transform: uppercase;
+}
