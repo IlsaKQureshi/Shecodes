@@ -1,18 +1,7 @@
 :root {
-  --heading-font: 32px;
-  --primary-colour: #885df1;
-  --bg-colour: #fff4dd;
+  --heading-font: 15px;
+  --primary-colour: #6458ff;
   --border-radius: 5px;
-}
-
-body {
-  text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-h1 {
-  font-size: 38px;
-  color: var(--primary-colour);
 }
 
 .contact-link {
@@ -29,27 +18,28 @@ h1 {
   text-decoration: none;
   border-radius: var(--border-radius);
   box-shadow: 5px 10px rgba(49, 45, 45, 0.125);
-  color: black;
 }
 
 .contactme,
 .aboutme {
-  text-align: justify;
-  padding: 10px;
-  margin: 20px;
   font-size: var(--heading-font);
+  border-radius: var(--border-radius);
+  padding: 13px;
+  color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.41);
 }
+.contactme {
+  background-color: var(--primary-colour);
+  border: 1px;
+}
+.aboutme {
+  color: var(--primary-colour);
+  border: 1px solid var(--primary-colour);
+}
+
 .description {
   display: flex;
   justify-content: space-between;
-}
-
-p {
-  flex: 1;
-  padding: 10px;
-  margin: 15px;
-  background-color: var(--bg-colour);
-  border: var(--primary-colour) solid 1px;
 }
 
 .homepage {
