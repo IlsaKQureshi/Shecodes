@@ -70,11 +70,15 @@
 @media (max-width: 576px) {
   h3,
   p,
-  .h2 {
+  .h2,
+  .app-title,
+  .about-title,
+  .contact-title {
     font-size: 20px !important;
     padding-bottom: 10px;
   }
-  h1 {
+  h1,
+  .about-sub {
     font-size: 30px !important;
   }
 
@@ -89,12 +93,31 @@
   }
 
   .pic1 {
-    margin-top: 90px !important;
+    margin-top: 140px !important;
   }
 
-  .desc {
-    font-size: 10px;
-    padding: 10px;
+  .app-title {
+    padding-top: 140px;
+  }
+
+  .pic3,
+  .pic2 {
+    position: relative;
+    top: 25px !important;
+  }
+
+  .apic1,
+  .apic2,
+  .apic3 {
+    padding: 3px;
+    background-color: #875df12a;
+  }
+
+  .desc,
+  .contact-desc,
+  .description1 {
+    font-size: 15px !important;
+    padding: 10px !important;
   }
 
   .app-desc {
