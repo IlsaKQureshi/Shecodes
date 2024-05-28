@@ -66,3 +66,38 @@
 .heading {
   font-size: var(--heading-font);
 }
+
+@media (max-width: 576px) {
+  h3,
+  p,
+  .h2 {
+    font-size: 20px !important;
+    padding-bottom: 10px;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
+
+  button {
+    font-size: 12px !important;
+    margin: 2px;
+  }
+  .pic1,
+  .pic2,
+  .pic3 {
+    padding: 3px !important;
+  }
+
+  .pic1 {
+    margin-top: 90px !important;
+  }
+
+  .desc {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .app-desc {
+    padding-top: 30px;
+  }
+}
