@@ -1,13 +1,15 @@
 body {
   background-color: #050505;
 }
-h1 {
+.contact-card h1 {
   color: #83deff;
   font-family: "Playfair Display", serif;
   font-weight: bold;
 }
 
-p {
+.contact-card p,
+h2 {
   color: #ffffff;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
