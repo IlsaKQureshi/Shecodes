@@ -63,6 +63,7 @@ body {
 
 .project-cards {
   color: var(--font-colour);
+  line-height: 30px;
 }
 
 .project-cards h2 {
