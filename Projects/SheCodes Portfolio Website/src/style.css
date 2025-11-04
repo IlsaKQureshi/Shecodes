@@ -23,6 +23,7 @@ body {
   padding: 50px 10px;
   margin-bottom: 40px;
   border-radius: 10px !important;
+  box-shadow: 0 4px 10px #151515;
 }
 .contact-card h1 {
   color: var(--secondary-color);
@@ -60,4 +61,22 @@ body {
   line-height: 27px;
 }
 
-.project-cards .btn-w-outline;
+.project-cards {
+  color: var(--font-colour);
+}
+
+.project-cards h2 {
+  font-family: "Playfair Display", serif;
+  margin: 30px;
+}
+
+.project-cards .btn-w-outline {
+  color: var(--secondary-color);
+  font-size: 14px;
+  text-align: center;
+  margin: 10px;
+  padding: 8px 30px;
+  border-radius: 4px;
+  line-height: 27px;
+  border: 1px solid;
+}
