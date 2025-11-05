@@ -81,3 +81,18 @@ body {
   line-height: 27px;
   border: 1px solid;
 }
+
+.project-cards .container {
+  padding: 20px;
+  margin: 10px auto;
+}
+
+.project-cards .container p {
+  text-align: justify;
+}
+
+.project-cards img {
+  max-width: 400px;
+  max-height: 400px;
+  padding: 5px;
+}
