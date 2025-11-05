@@ -122,3 +122,18 @@ body {
   padding: 8px 15px;
   border-radius: 3px;
 }
+
+.socialmedia {
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+.socials a {
+  margin: 20px auto;
+}
+
+.socialmedia a {
+  padding-right: 50px;
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+}
