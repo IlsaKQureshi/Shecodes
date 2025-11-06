@@ -137,3 +137,22 @@ body {
   margin-bottom: 30px;
   color: var(--secondary-color);
 }
+
+.project-cards {
+  padding: 150px 60px;
+}
+
+@media (max-width: 960px) {
+  .contact-card h1,
+  .contact-card p,
+  .contact-card h2 {
+    transform: scale(0.6);
+    padding: 2px;
+  }
+
+  .project-cards .project1,
+  .project2,
+  .project3 {
+    justify-content: center;
+  }
+}
