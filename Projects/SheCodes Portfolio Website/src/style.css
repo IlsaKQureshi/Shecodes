@@ -150,9 +150,21 @@ body {
     padding: 2px;
   }
 
+  .project-cards {
+    padding: 40px;
+  }
+
   .project-cards .project1,
   .project2,
   .project3 {
     justify-content: center;
+  }
+
+  .project-cards {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .work-inquiry {
+    transform: scale(0.9);
   }
 }
