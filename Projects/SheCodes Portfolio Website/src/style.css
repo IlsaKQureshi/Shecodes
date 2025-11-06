@@ -84,7 +84,7 @@ body {
 }
 
 .project-cards .container {
-  padding: 60px 10px;
+  padding: 40px 10px;
   margin: 10px auto;
 }
 
@@ -160,11 +160,17 @@ body {
     justify-content: center;
   }
 
+  .project-cards h2 {
+    color: red;
+    font-size: 40px;
+  }
+
   .project-cards {
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
   .work-inquiry {
-    transform: scale(0.9);
+    transform: scale(0.8);
+    width: 75%;
   }
 }
