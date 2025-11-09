@@ -3,6 +3,7 @@
   --secondary-color: #83deffd6;
   --font-colour: #ffffff;
   --font-fam: "Poppins", sans-serif;
+  --font-fam2: "Playfair Display", serif;
 }
 
 .navbar {
@@ -27,7 +28,7 @@ body {
 }
 .contact-card h1 {
   color: var(--secondary-color);
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-fam2);
   font-weight: bold;
   font-size: 96px;
   text-align: center;
@@ -67,7 +68,7 @@ body {
 }
 
 .project-cards h2 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-fam2);
   margin: 30px;
   font-size: 40px;
 }
@@ -109,7 +110,7 @@ body {
 }
 
 .work-inquiry h1 {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-fam2);
   font-size: 38px;
 }
 
@@ -172,4 +173,34 @@ body {
     transform: scale(0.8);
     width: 75%;
   }
+}
+
+/* x---x--- About Page ---x---x */
+
+.about {
+  padding: 40px 20px;
+  text-align: justify;
+}
+
+.intro {
+  margin: 20px;
+  padding: 40px;
+}
+
+.intro h1 {
+  color: var(--font-colour);
+  font-family: var(--font-fam2);
+  font-weight: 700;
+  font-size: 54px;
+}
+
+.intro h3 {
+  padding: 20px 0px;
+  font-size: 15px;
+  color: var(--secondary-color);
+}
+
+.intro p {
+  padding: 20px 0px;
+  margin-right: 40px;
 }

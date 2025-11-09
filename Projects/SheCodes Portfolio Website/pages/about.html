@@ -35,12 +35,45 @@
 
     <link rel="stylesheet" href="../src/style.css" />
   </head>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#"></a> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <body>
     <div class="about container">
       <div class="row">
-        <div class="col-6">
+        <div class="intro col-7">
           <h1>About Me</h1>
-          <h3>Frontend Developer,based in Belgium</h3>
+          <h3>Frontend Developer, based in Belgium</h3>
           <p class="text-white-50">
             For anyone who wants to start learning code, this workshop is very
             interesting. You will be challenged with different exercises, and
@@ -52,7 +85,7 @@
             <button class="btn">View all project</button>
           </div>
         </div>
-        <div class="col-6">
+        <div class="pic col-4">
           <img src="../images/profilepic.jpeg" alt="" class="img-fluid" />
         </div>
       </div>
@@ -82,6 +115,6 @@
       <a href="#" class="fa fa-linkedin text-decoration-none"></a>
       <a href="#" class="fa fa-github text-decoration-none"></a>
     </div>
-    <link rel="stylesheet" href="src/script.js" />
+    <link rel="stylesheet" href="../src/script.js" />
   </body>
 </html>
