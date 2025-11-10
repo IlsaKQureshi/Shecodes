@@ -173,11 +173,16 @@ body {
     transform: scale(0.8);
     width: 75%;
   }
+
+  .about .row {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* x---x--- About Page ---x---x */
 
-.about {
+.about .row {
   padding: 60px 10px;
   text-align: justify;
 }
