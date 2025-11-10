@@ -178,7 +178,7 @@ body {
 /* x---x--- About Page ---x---x */
 
 .about {
-  padding: 40px 20px;
+  padding: 60px 10px;
   text-align: justify;
 }
 
@@ -195,12 +195,42 @@ body {
 }
 
 .intro h3 {
-  padding: 20px 0px;
+  padding: 35px 0px;
   font-size: 15px;
   color: var(--secondary-color);
 }
 
 .intro p {
   padding: 20px 0px;
-  margin-right: 40px;
+  margin-right: 90px;
+}
+
+.intro button {
+  background-color: var(--secondary-color);
+  color: var(--bg-color-primary);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 4px;
+  line-height: 27px;
+  display: block;
+  margin-left: 0;
+}
+
+.about img {
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px #151515;
+}
+
+.socialmedia-about a {
+  padding-right: 50px;
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+}
+
+.socialmedia-about {
+  margin-top: 30px;
+  padding-left: 50px;
+  padding-bottom: 20px;
 }
