@@ -9,9 +9,15 @@
 .navbar {
   background-color: var(--bg-color-primary) !important;
   font-family: var(--font-fam);
+  font-size: 15px;
+  margin-right: 60px;
 }
-.nav {
-  color: var(--font-colour) !important;
+.navbar .nav-link.active {
+  color: var(--secondary-color) !important;
+}
+
+.navbar li {
+  padding-right: 15px;
 }
 
 body {
