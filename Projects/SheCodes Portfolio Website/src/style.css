@@ -20,6 +20,15 @@
   padding-right: 15px;
 }
 
+nav a {
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav .nav-link.active a {
+  color: #6c63ff !important;
+}
+
 body {
   background-color: var(--bg-color-primary);
   font-family: var(--font-fam);
@@ -186,7 +195,7 @@ body {
   }
 
   .intro p {
-    text-align: center;
+    text-align: justify;
     line-height: 25px;
   }
 }
