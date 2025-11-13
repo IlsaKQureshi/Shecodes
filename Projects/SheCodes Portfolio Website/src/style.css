@@ -20,6 +20,10 @@
   padding-right: 15px;
 }
 
+.logo {
+  max-height: 40px;
+}
+
 nav a {
   transition: all 100ms ease-in-out;
 }
