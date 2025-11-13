@@ -184,6 +184,11 @@ body {
     text-align: center;
     padding: 0%;
   }
+
+  .intro p {
+    text-align: center;
+    line-height: 25px;
+  }
 }
 
 /* x---x--- About Page ---x---x */
@@ -198,7 +203,8 @@ body {
   padding: 40px;
 }
 
-.intro h1 {
+.intro h1,
+h2 {
   color: var(--font-colour);
   font-family: var(--font-fam2);
   font-weight: 700;
@@ -212,6 +218,7 @@ body {
 
 .intro p {
   margin-right: 90px;
+  margin-bottom: 20px;
 }
 
 .intro button {
@@ -245,3 +252,23 @@ body {
 }
 
 /* x---x--- My Work Page ---x---x */
+
+.desc {
+  margin-top: 20px;
+  padding: 2px;
+}
+
+div.work-inquiry.col-md-6.mb-4 {
+  color: var(--font-colour);
+  box-shadow: 0 3px 5px #151515;
+  border-radius: 20px;
+  line-height: 7px;
+  font-size: 20px;
+  margin: 0px;
+  padding: 40px 50px;
+}
+
+.intro p {
+  margin: 10px;
+  padding: 10px;
+}
