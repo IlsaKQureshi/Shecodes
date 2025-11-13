@@ -180,7 +180,7 @@ body {
     width: 75%;
   }
 
-  .about {
+  .content {
     text-align: center;
     padding: 0%;
   }
@@ -188,7 +188,7 @@ body {
 
 /* x---x--- About Page ---x---x */
 
-.about .row {
+.content .row {
   padding: 60px 40px;
   text-align: justify;
 }
@@ -226,7 +226,7 @@ body {
   margin-left: 0;
 }
 
-.about img {
+.content img {
   margin-top: 50px;
   border-radius: 10px;
   box-shadow: 0 5px 10px #151515;
@@ -243,3 +243,5 @@ body {
   padding-left: 50px;
   padding-bottom: 20px;
 }
+
+/* x---x--- My Work Page ---x---x */
