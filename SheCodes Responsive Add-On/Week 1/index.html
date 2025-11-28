@@ -7,24 +7,40 @@
 
     <style>
       .vidgrid {
-        background-color: aqua;
+        max-width: 1200px;
+        margin: 0 auto;
         display: grid;
         gap: 20px;
       }
       .row1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .row1 .vidbox iframe {
+        width: 100%;
+        aspect-ratio: 21 / 9;
+      }
+      .row2 .vidbox iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
       }
 
       .row2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
       }
 
       @media (max-width: 900px) {
         .row1 {
           display: grid;
           grid-template-columns: 1fr;
+        }
+
+        .row1 .vidbox iframe {
+          aspect-ratio: 16/9;
         }
 
         .row2 {
@@ -39,8 +55,6 @@
       <div class="row1">
         <div class="vidbox">
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/yneMAWChJ_s?si=5FVrbuasC3GiHmR_"
             title="YouTube video player"
             frameborder="0"
@@ -51,52 +65,44 @@
         </div>
         <div class="vidbox">
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/xfOT2elC2Ok?si=2XNVRzcFggeuXiEM"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            allowfullscreen=""
           ></iframe>
         </div>
       </div>
       <div class="row2">
         <div class="vidbox">
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/miBDRJuQ6Cs?si=5g22k7u2s5D7Tbgj"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            allowfullscreen=""
           ></iframe>
         </div>
         <div class="vidbox">
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/BF7xzh7GVGE?si=Iau5kgBkY1wrOT6u"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            allowfullscreen=""
           ></iframe>
         </div>
         <div class="vidbox">
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/YRBarpKRY_U?si=ChAVqUzKbFbUKk2i"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            allowfullscreen=""
           ></iframe>
         </div>
       </div>
