@@ -4,161 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
-    <div class="boxes">
-      <div class="box">l</div>
-      <div class="box">2</div>
-      <div class="box">3</div>
-      <div class="box">4</div>
-      <div class="box">5</div>
-      <div class="box">6</div>
-      <div class="box">7</div>
-      <div class="box">8</div>
-    </div>
-
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Heading</th>
-            <th>Heading</th>
-            <th>Heading</th>
-            <th>Heading</th>
-            <th>Heading</th>
-            <th>Heading</th>
-            <th>Heading</th>
-            <th>Heading</th>
-            <th>Heading</th>
-            <th>Heading</th>
-            <th>Heading</th>
-            <th>Heading</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-          </tr>
-          <tr>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-          </tr>
-          <tr>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-          </tr>
-          <tr>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-            <td>cell</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
 
     <style>
-      /* Challenge #1 */
-      /* .boxes {
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr;
-        grid-gap: 20px;
-      }
-      .box {
+      .vidgrid {
         background-color: aqua;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        border-radius: 10px;
-      } */
-
-      /* challenge #2 
-
-       .boxes {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-gap: 20px;
+        gap: 20px;
       }
-      .box {
-        background-color: aqua;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        border-radius: 10px;
-      } */
-
-      .boxes {
+      .row1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr 1fr 2fr 1fr;
-        grid-gap: 20px;
-      }
-      .box {
-        background-color: aqua;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        border-radius: 10px;
       }
 
-      table {
-        border: 2px solid grey;
-      }
-
-      @media (max-width: 900px) {
-        .boxes {
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr;
-          grid-gap: 10px;
-        }
-
-        .table-container {
-          overflow-x: auto;
-        }
+      .row2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
       }
     </style>
+  </head>
+  <body>
+    <div class="vidgrid">
+      <div class="row1">
+        <div class="vidbox">vid1</div>
+        <div class="vidbox">vid2</div>
+      </div>
+      <div class="row2">
+        <div class="vidbox">vid3</div>
+        <div class="vidbox">vid4</div>
+        <div class="vidbox">vid5</div>
+      </div>
+    </div>
   </body>
 </html>
