@@ -1,44 +1,121 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: white;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 header {
-  background-image: linear-gradient(rgb(39, 32, 68, 0.6), rgb(39, 32, 68, 0.6)),
+  background-image: linear-gradient(rgb(39, 32, 68, 0.7), rgb(39, 32, 68, 0.7)),
     url(../images/image\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  color: aliceblue;
-  padding: 286px 0px;
+  color: white;
+  padding: 260px 0px;
 }
 
 header h1 {
   font-weight: 700;
   font-size: 96px;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 header h2 {
   font-weight: 400;
   font-size: 40px;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 header h4 {
   font-weight: 900;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 1;
   letter-spacing: 5px;
 }
 
 header a {
-  font: 700;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1;
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
+  color: black;
+  background-color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+footer {
+  background-image: linear-gradient(
+      rgb(39, 32, 68, 0.85),
+      rgb(39, 32, 68, 0.85)
+    ),
+    url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 100px 0px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+footer h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  margin-right: 20px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: 0.7;
+  margin-right: 30px;
+  text-align: justify;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  color: white;
+  opacity: 0.7;
+  line-height: 2;
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h4 {
+    font-size: 12px;
+  }
 }
