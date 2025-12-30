@@ -1,3 +1,44 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgb(39, 32, 68, 0.6), rgb(39, 32, 68, 0.6)),
+    url(../images/image\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: aliceblue;
+  padding: 286px 0px;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.5;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+header h4 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+}
+
+header a {
+  font: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
