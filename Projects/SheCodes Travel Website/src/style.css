@@ -121,6 +121,10 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.grid-3-embeds {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 section.wafflebars {
   background: #c7c7c7;
   text-align: center;
@@ -176,6 +180,19 @@ a.btn {
   margin-bottom: 30px;
 }
 
+section.insta-embeds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  margin: 25px 0;
+}
+
+.insta-embeds h1 {
+  text-align: center;
+}
 footer h4 {
   font-weight: 700;
   font-size: 20px;
