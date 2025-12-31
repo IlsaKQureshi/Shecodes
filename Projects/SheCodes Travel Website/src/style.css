@@ -90,7 +90,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 100px 0px;
+  padding: 10px 0px;
 }
 
 section {
@@ -187,7 +187,7 @@ section.insta-embeds {
   text-align: center;
   flex-direction: column;
 
-  margin: 25px 0;
+  margin: 0px 25px;
 }
 
 .insta-embeds h1 {
